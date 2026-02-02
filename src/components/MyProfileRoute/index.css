@@ -1,0 +1,545 @@
+.myProfileContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #fafafa;
+  padding-top: 33px;
+}
+
+@media (max-width: 768px) {
+  .myProfileContainer {
+    padding-top: 28px;
+    padding-bottom: 48px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.myProfileMobileContainer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .myProfileDesktopContainer {
+    display: none;
+  }
+
+  .myProfileMobileContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    padding-top: 28px;
+    padding-bottom: 48px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.profileAndDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .profileAndDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding-left: 24px;
+    margin-bottom: 12px;
+  }
+
+  .profileCountDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-left: 12px;
+  }
+}
+
+.myProfilePic {
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+}
+
+.myProfileDesktopProfilePic {
+  display: block;
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+}
+
+.myProfileMobileProfilePic {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .myProfileDesktopProfilePic {
+    display: none;
+  }
+
+  .myProfileMobileProfilePic {
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+.profileTextDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+}
+
+@media (max-width: 768px) {
+  .profileTextDetailsContainer {
+    padding-left: 0px;
+    margin: 0;
+  }
+}
+
+.myProfilePicAndCountContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .myProfilePicAndCountContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.myProfileUsername {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #262626;
+  padding-bottom: 24px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .myProfileUsername {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 12px;
+  }
+}
+
+.followerCountDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .followerCountDetailsContainer {
+    padding: 0;
+  }
+}
+
+.followerCountDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #262626;
+  gap: 4px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .followerCountDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    text-align: center;
+    padding-left: 24px;
+  }
+}
+
+.followerCountDetailsText {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: #262626;
+  padding-right: 48px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .followerCountDetailsText {
+    text-align: center;
+    font-size: 12px;
+    padding-right: 0;
+    margin: 0;
+  }
+}
+
+.myProfileName {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .myProfileName {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 4px;
+  }
+}
+
+.myProfileBio {
+  max-width: 675px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #262626;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .myProfileBio {
+    font-size: 14px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+  }
+}
+
+.myProfileStoriesContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .myProfileStoriesContainer {
+    padding-left: 16px;
+  }
+}
+
+.myProfileStory {
+  width: 86px;
+  height: 86px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 0;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .myProfileStory {
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.myProfileStoryImage {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .myProfileStoryImage {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.myProfileHorizontalRuleSeparator {
+  width: 100%;
+  border: 0.5px solid #c6c6c8;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .myProfileHorizontalRuleSeparator {
+    margin-bottom: 24px;
+  }
+}
+
+.myProfilePostHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .myProfilePostHeadingContainer {
+    margin-bottom: 12px;
+    padding-left: 12px;
+  }
+}
+
+.bsGridIcon {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .bsGridIcon {
+    font-size: 20px;
+  }
+}
+
+.myProfilePostText {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+}
+
+@media (max-width: 768px) {
+  .myProfilePostText {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding-left: 4px;
+  }
+}
+
+.myProfilePostsContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.myProfilePostsList {
+  width: 330px;
+  height: 330px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .myProfilePostsList {
+    width: 116px;
+    height: 116px;
+    max-width: 140px;
+    max-height: 140px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    flex-grow: 1;
+  }
+}
+
+.myProfilePostImage {
+  width: 330px;
+  height: 330px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .myProfilePostImage {
+    object-fit: cover;
+    width: 116px;
+    height: 116px;
+    max-width: 140px;
+    max-height: 140px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+.myProfileEmptyPostViewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+
+@media (max-width: 768px) {
+  .myProfileEmptyPostViewContainer {
+    margin: 48px;
+  }
+}
+
+.noPostsImg {
+  width: 86px;
+  height: 86px;
+  margin: 0;
+  padding: 0;
+}
+
+.BiCameraIconContainer {
+  width: 86px;
+  height: 86px;
+  border: solid 2px #262626;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BiCameraIcon {
+  width: 48px;
+  height: 45px;
+  color: #262626;
+}
+
+@media (max-width: 768px) {
+  .noPostsImg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .BiCameraIconContainer {
+    width: 48px;
+    height: 48px;
+  }
+
+  .BiCameraIcon {
+    width: 29px;
+    height: 27px;
+  }
+}
+
+.noPostText {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .noPostText {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.myProfileLoaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.myProfileFailureView {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myProfileFailureViewImage {
+  width: 560px;
+  height: 274px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .myProfileFailureViewImage {
+    width: 260px;
+    height: 127px;
+  }
+}
+
+.failureText {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #262626;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .failureText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.tryAgainBtn {
+  width: 127px;
+  height: 48px;
+  border-radius: 12px;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  color: #ffffff;
+  background-color: #4094ef;
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .tryAgainBtn {
+    width: 102px;
+    height: 32px;
+    gap: 8px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    font-size: 12px;
+  }
+}

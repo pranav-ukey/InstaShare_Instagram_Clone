@@ -1,0 +1,245 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom: solid 1px #dbdbdb;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: none;
+  }
+}
+
+.headerLogoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerWebsiteLogo {
+  width: 59px;
+  height: 30px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .headerWebsiteLogo {
+    width: 55px;
+    height: 28px;
+    margin-right: 12px;
+  }
+}
+
+.headerLogoName {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #262626;
+}
+
+@media (max-width: 768px) {
+  .headerLogoName {
+    font-size: 18px;
+  }
+}
+
+.desktopSearchAndMenuContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .desktopSearchAndMenuContainer {
+    display: none;
+  }
+}
+
+.mobileMenuBtn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .menuLogo {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.searchBoxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 214px;
+  height: 28px;
+  border-radius: 3px;
+}
+
+.searchInput {
+  padding-left: 12px;
+  width: 180px;
+  height: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-right: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.searchIconBtnContainer {
+  width: 34px;
+  height: 28px;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: none;
+  border: solid 1px #dbdbdb;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.searchIcon {
+  width: 10px;
+  height: 10px;
+  color: #989898;
+}
+
+.desktopHeaderMenuContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.headerSearchBtn {
+  padding-right: 10px;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #262626;
+  cursor: pointer;
+  text-decoration: none;
+  padding-right: 0;
+  margin: 0;
+}
+
+.headerMenuListItem {
+  padding-right: 10px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #262626;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.activeHeaderMenuListItem {
+  color: #4094ef;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.logoutBtn {
+  width: 86px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #4094ef;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMenuOptionsContainer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 26px;
+    padding-right: 24px;
+    width: 100%;
+  }
+
+  .mobileMenuOptionsListContainer {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menuCloseBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .closeIconLogo {
+    height: 24px;
+    width: 24px;
+  }
+}
