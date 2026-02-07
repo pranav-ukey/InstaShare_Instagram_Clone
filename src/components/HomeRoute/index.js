@@ -187,20 +187,6 @@ class HomeRoute extends Component {
 
     const clickedPost = postsList.find(post => post.postId === postId)
 
-    this.setState(prevState => ({
-      postsList: prevState.postsList.map(post =>
-        post.postId === postId
-          ? {
-              ...post,
-              isLiked: !post.isLiked,
-              likesCount: post.isLiked
-                ? post.likesCount - 1
-                : post.likesCount + 1,
-            }
-          : post,
-      ),
-    }))
-
     const postLikeApiUrl = `https://apis.ccbp.in/insta-share/posts/${postId}/like`
     const jwtToken = Cookies.get('jwt_token')
 
@@ -215,7 +201,26 @@ class HomeRoute extends Component {
       }),
     }
 
-    const response = await fetch(postLikeApiUrl, options)
+    try {
+      const response = await fetch(postLikeApiUrl, options)
+      if (response.ok) {
+        this.setState(prevState => ({
+          postsList: prevState.postsList.map(post =>
+            post.postId === postId
+              ? {
+                  ...post,
+                  isLiked: !post.isLiked,
+                  likesCount: post.isLiked
+                    ? post.likesCount - 1
+                    : post.likesCount + 1,
+                }
+              : post,
+          ),
+        }))
+      }
+    } catch {
+      this.setState({postsApiStatus: apiStatusConstants.failure})
+    }
   }
 
   renderUserStoriesSuccessView = () => {

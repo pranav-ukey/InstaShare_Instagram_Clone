@@ -339,7 +339,7 @@
   margin: 0;
 }
 
-.postCommentUserName {
+span {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
@@ -352,7 +352,7 @@
 }
 
 @media (max-width: 768px) {
-  .postCommentUserName {
+  span {
     font-size: 12px;
   }
 }
